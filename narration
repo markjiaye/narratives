@@ -1,0 +1,76 @@
+.text_1 {
+    animation: text1;
+}
+
+.text_2 {
+    animation: text2;
+}
+
+.text_1,
+.text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+    color: black !important;
+    font-weight: 300;
+    align-content: left;
+    font-family: helvetica;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 25px;
+
+}
+
+.pagesubtitles {
+    font-size: 16px;
+    color: black !important;
+    font-weight: 300;
+    align-content: left;
+    font-family: helvetica;
+}
+
+@keyframes text2 {
+
+    0%,
+    50%,
+    100% {
+        width: 0;
+    }
+
+    60%,
+    90% {
+        width: 200px;
+    }
+}
+
+@keyframes text1 {
+
+    0%,
+    50%,
+    100% {
+        width: 0;
+    }
+
+    10%,
+    40% {
+        width: 200px;
+    }
+}
+
+
+@keyframes typewriter {
+
+    0%,
+    100% {
+        width: 0;
+    }
+
+    20%,
+    80% {
+        width: 200px;
+    }
+}
